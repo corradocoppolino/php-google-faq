@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+header{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid grey;
+    top: 0;
+    background-color: white;
+}
+
+.h-container{
+    height: 100%;
+    width: 98%;
+    margin: auto;
+}
+
+/* HEADER TOP */
+
+.h-top{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h-top .left{
+    display: flex;
+    align-items: center;
+}
+
+.left img{
+    height: 60px;
+    width: auto;
+}
+
+.left p{
+    font-size: 30px;
+    margin-left: 10px;
+    color: #5F6369;
+}
+
+.h-top .right{
+    display: flex;
+    align-items: center;
+}
+
+.h-top .right .fa-circle{
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.h-top .right .fa-ellipsis-v{
+    font-size: 20px;
+    color: #5F6369;
+}
+
+
+/* HEADER BOTTOM */
+
+.h-bottom{
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.h-bottom p{
+    color: #5F6369;
+    margin-right: 40px;
+}
+
+.h-bottom p.active{
+    color: blue;
+    border-bottom: 2px solid blue;
+    padding:10px 0;
+    
+}
+
+/* MAIN */
+
+main{
+    height: 2000px;
+    background-color: greenyellow;
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+}
+
+main h1{
+    margin-top: 70px;
+}
+
+main p{
+    margin-top: 30px;
+}
+

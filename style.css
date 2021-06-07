@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Noto Sans', sans-serif;
+}
+
 /* HEADER */
 
 header{
@@ -85,18 +89,58 @@ header{
 /* MAIN */
 
 main{
-    height: 2000px;
-    background-color: greenyellow;
     padding-top: 100px;
-    width: 80%;
-    margin: auto;
+    width: 75%;
+    margin: 60px auto 0 auto;
 }
 
-main h1{
-    margin-top: 70px;
-}
-
-main p{
+.domande{
     margin-top: 30px;
 }
 
+.domande h2{
+    margin-bottom: 20px;
+    color: #3C4043;
+}
+
+.domande p{
+    color: #212121
+}
+
+/* FOOTER */
+
+footer{
+    height: 40px;
+    background-color: #F4F4F4;
+}
+
+footer .f-container{
+    height: 100%;
+    width: 77%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .left{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer .left p{
+    font-size: 12px;
+    color: #9E9E9E;
+}
+
+footer .left i{
+    font-size: 2px;
+    margin-left: 5px;
+    color: #9E9E9E;
+}
+
+footer .right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

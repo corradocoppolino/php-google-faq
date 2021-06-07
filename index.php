@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Google FAQ</title>
 </head>
@@ -101,21 +104,52 @@
 
         <?php foreach($faq as $element) { ?>
 
-            <?php $explode = explode(PHP_EOL, $faq['answer']) ?>
+            <?php $explode = explode(PHP_EOL, $element['answer']) ?>
 
-            <h2> <?php echo $element["question"] ?> </h2>
+            <div class="domande">
 
-            <?php foreach($explode as $value) { ?>
+                <h2> <?php echo $element["question"] ?> </h2>
 
-                <p> <?php echo $value ?> </p>
+                <?php foreach($explode as $value) { ?>
 
-            <?php } ?>            
+                    <p> <?php echo $value ?> </p> <br>
+
+                <?php } ?> 
+
+            </div>           
 
         <?php } ?>
 
     </main>
 
-    <footer></footer>
+    <footer>
+
+        <div class="f-container">
+
+            <div class="left">
+                <p>Google</p>
+                <i class="fas fa-circle"></i>
+                <p>Tutto su Google</p>
+                <i class="fas fa-circle"></i>
+                <p>Privacy</p>
+                <i class="fas fa-circle"></i>
+                <p>Termini</p>
+            </div>
+
+            <div class="right">
+                <form action="">
+                    <select id="cars" name="cars">
+                        <option value="inglese">Inglese</option>
+                        <option value="italiano">Italiano</option>
+                        <option value="francese">Francese</option>
+                        <option value="spagnolo">Spagnolo</option>
+                    </select>
+                </form>
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
